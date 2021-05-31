@@ -38,6 +38,10 @@ class PoLException extends \Exception
      */
     protected function getErrorMessage($errorId): string
     {
-        return $this->getErrors()[sprintf('code-%d', $errorId)];
+        return sprintf(
+            '%s - Error Code = [%d]'
+            , $this->getErrors()[sprintf('code-%d', $errorId)]
+            , $errorId
+        );
     }
 }

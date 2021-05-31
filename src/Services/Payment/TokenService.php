@@ -16,7 +16,7 @@ class TokenService extends BaseService
      *
      * @param $price
      * @param $paymentId
-     * @param string $callBack
+     * @param string|null $callBack
      * @param string $language
      * @param string|null $nationalCode
      * @param string|null $mobile

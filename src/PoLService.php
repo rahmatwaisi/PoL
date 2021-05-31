@@ -77,7 +77,7 @@ class PoLService
     /**
      * @throws Exceptions\PoLException
      */
-    public function getToken($price, $paymentId, string $callBack, string $language = 'fa', string $nationalCode = null, string $mobile = null, string $extraParam32Chars = null, string $extraParam300Chars = null)
+    public function getToken($price, $paymentId, string $callBack=null, string $language = 'fa', string $nationalCode = null, string $mobile = null, string $extraParam32Chars = null, string $extraParam300Chars = null)
     {
         return $this->tokenService->getToken(
             $price
