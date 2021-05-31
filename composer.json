@@ -3,7 +3,7 @@
     "description": "PoL is a laravel package to easily use polcard.ir payment services in your applications",
     "type": "library",
     "license": "MIT",
-     "keywords": [
+    "keywords": [
         "polcard",
         "gateway",
         "پل کارت",
@@ -29,11 +29,9 @@
         "php": "^7.2.5|^8.0",
         "guzzlehttp/guzzle": "^7"
     },
-    "psr-4": {
-        "RahmatWaisi\\PoL\\": "src/"
-    },
-    "autoload-dev": {
+    "autoload": {
         "psr-4": {
+            "RahmatWaisi\\PoL\\": "src/",
             "RahmatWaisi\\PoL\\Tests\\": "tests/"
         }
     },
