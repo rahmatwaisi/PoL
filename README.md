@@ -76,7 +76,7 @@ php artisan vendor:publish
 
 _باید توجه داشت که این route نباید دارای هیچ middleware ی باشد._
 
-مسیر `/payments/callback` به عنوان `callback_route` به صورت پیشفرض در فایل کانفیگ پل کارت `config/pol.php` درج شده است
+مسیر `payments/callback/` به عنوان `callback_route` به صورت پیشفرض در فایل کانفیگ پل کارت `config/pol.php` درج شده است
 که می توانید آن را تغییر داده و مسیر جدید را به عنوان `callback_route` انتخاب کنید.
 </div>
 
@@ -154,7 +154,7 @@ PoL::reversePayment( $token);
 ---
 ### لایسنس
 
-پکیج اتصال به درگاه پل کارت بصورت متن باز و تحت لایسنس [MIT license](https://opensource.org/licenses/MIT) قرار دارد.
+پکیج اتصال به درگاه پل کارت بصورت متن باز و تحت لایسنس [MIT](https://opensource.org/licenses/MIT) قرار دارد.
 
 </div>
 
