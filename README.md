@@ -1,4 +1,4 @@
-<div class="rtl">
+<div dir="rtl">
 
 # پکیج اتصال به درگاه پرداخت پل کارت [polcard.ir](https://polcard.ir/ipg.php)
 
