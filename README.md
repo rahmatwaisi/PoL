@@ -1,3 +1,9 @@
+<p align="center"><a href="https://polcard.ir" target="_blank"><img src="https://user-images.githubusercontent.com/20902452/120212204-f2169e80-c246-11eb-8301-ba12bc6b1037.png" width="320"></a></p>
+
+<p align="center">
+<a href="https://packagist.org/packages/rahmatwaisi/pol-gateway"><img src="https://img.shields.io/packagist/dt/rahmatwaisi/pol-gateway?style=for-the-badge&&logo=composer" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/rahmatwaisi/pol-gateway"><img src="https://img.shields.io/packagist/l/rahmatwaisi/pol-gateway?style=for-the-badge&&" alt="License"></a>
+</p>
 <div dir="rtl">
 
 # پکیج اتصال به درگاه پرداخت پل کارت [polcard.ir](https://polcard.ir/ipg.php)
@@ -152,11 +158,17 @@ PoL::reversePayment( $token);
 - [Email](mailto:rahmatwaisi@gmail.com)
 
 ---
-### لایسنس
-
-پکیج اتصال به درگاه پل کارت بصورت متن باز و تحت لایسنس [MIT](https://opensource.org/licenses/MIT) قرار دارد.
-
 </div>
 
+## License
 
+<div dir="rtl">
+
+<p align="center">
+
+پکیج اتصال به درگاه پل کارت بصورت متن باز و تحت لایسنس [MIT license](https://opensource.org/licenses/MIT) قرار دارد.
+
+</p>
+
+</div>
 
