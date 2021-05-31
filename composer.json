@@ -37,9 +37,6 @@
             "RahmatWaisi\\PoL\\Tests\\": "tests/"
         }
     },
-    "config": {
-        "sort-packages": true
-    },
     "extra": {
         "laravel": {
             "providers": [
