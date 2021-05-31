@@ -41,7 +41,7 @@ class TokenService extends BaseService
             'price' => $price,
             'payLoad' => $extraParam32Chars,
             'buyId' => $paymentId,
-            'callBack' => $callBack ?? route($this->getConfigKey('callback_url')),
+            'callBack' => $callBack ?? route($this->getConfigKey('callback_route')),
             'language' => $language,
             'nationalCode' => $nationalCode,
             'mobile' => $mobile,

@@ -19,6 +19,9 @@
 ```shell
 composer require rahmatwaisi/pol-gateway
 ```
+
+---
+
 <div dir="rtl">
     
 **مرحله دوم - انتقال فایل های مورد نیاز**
@@ -33,43 +36,16 @@ php artisan vendor:publish
 
 ```
 
+---
+
 <div dir="rtl">
-    
+
 **مرحله سوم**
 
-باید متد `callback` را در کنترلر `app\Http\Controllers\PaymentCallbackController::class` طبق نیاز خود ویرایش کنید.
-چند راهکار به صورت `TODO` پیشنهاد شده است.
-
-</div>
-
-<div dir="rtl">
-
-**مرحله چهارم - اضافه کردن یک مسیر برای دریافت اطلاعات پرداخت از درگاه**
-
-_باید توجه داشت که این route نباید دارای هیچ middleware ی باشد._
-
-</div>
-
-```php
-\Illuminate\Support\Facades\Route::any(
-    '/payments/callback'
-    , [
-        Http\Controllers\PaymentCallbackController::class
-        , 'callback'
-    ]
-);
-```
-
-
-<div dir="rtl">
-    
-**مرحله پایانی**
-
-آخرین کاری که باید انجام دهید تغییر تنظیمات مربوط به درگاه و درج کلید پذیرندگی در آن است که باید فایل
+در این مرحله باید تنظیمات مربوط به درگاه و درج کلید پذیرندگی را انجام دهید که برای اینکار باید فایل
 `config/pol.php` را ویرایش کنید.
-    
-</div>
 
+</div>
 
 ```php 
     
@@ -80,6 +56,42 @@ _باید توجه داشت که این route نباید دارای هیچ middl
 
     'key' => 'INSERT_YOUR_KEY_HERE', 
 ```
+
+---
+
+<div dir="rtl">
+    
+**مرحله چهارم**
+
+باید متد `callback` را در کنترلر `app\Http\Controllers\PaymentCallbackController::class` طبق نیاز خود ویرایش کنید.
+چند راهکار به صورت `TODO` پیشنهاد شده است.
+
+</div>
+
+---
+
+<div dir="rtl">
+
+**مرحله پایانی - اضافه کردن یک مسیر برای دریافت اطلاعات پرداخت از درگاه**
+
+_باید توجه داشت که این route نباید دارای هیچ middleware ی باشد._
+
+مسیر `/payments/callback` به عنوان `callback_route` به صورت پیشفرض در فایل کانفیگ پل کارت `config/pol.php` درج شده است
+که می توانید آن را تغییر داده و مسیر جدید را به عنوان `callback_route` انتخاب کنید.
+</div>
+
+```php
+\Illuminate\Support\Facades\Route::any(
+    // TODO change this path if you want
+    //   so if you changed this path, open config/pol.php and edit  callback_route key.
+    '/payments/callback'
+    , [
+        Http\Controllers\PaymentCallbackController::class
+        , 'callback'
+    ]
+);
+```
+
     
 <div dir="rtl">    
     
