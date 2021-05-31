@@ -1,8 +1,9 @@
 <p align="center"><a href="https://polcard.ir" target="_blank"><img src="https://user-images.githubusercontent.com/20902452/120212204-f2169e80-c246-11eb-8301-ba12bc6b1037.png" width="320"></a></p>
 
 <p align="center">
-<a href="https://packagist.org/packages/rahmatwaisi/pol-gateway"><img src="https://img.shields.io/packagist/dt/rahmatwaisi/pol-gateway?style=for-the-badge&&logo=composer" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/rahmatwaisi/pol-gateway"><img src="https://img.shields.io/packagist/l/rahmatwaisi/pol-gateway?style=for-the-badge&&" alt="License"></a>
+<a href="https://img.shields.io/github/license/mr648/PoL?color=green&style=for-the-badge"><img src="https://img.shields.io/github/license/mr648/PoL?color=green&style=for-the-badge" alt="License"></a>
+<a href="https://twitter.com/rahmatwaisi"><img src="https://img.shields.io/twitter/follow/rahmatwaisi?logo=twitter&style=for-the-badge" alt="Twitter"></a>
+<a href="https://packagist.org/packages/rahmatwaisi/pol-gateway"><img src="https://img.shields.io/packagist/dt/rahmatwaisi/pol-gateway?style=for-the-badge&&logo=composer" alt="Total Downloads"></a>    
 </p>
 <div dir="rtl">
 
