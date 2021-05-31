@@ -21,7 +21,7 @@ class PoLServiceProvider extends ServiceProvider
     public function boot()
     {
         $config = __DIR__ . '/../config/pol.php';
-        $callbackController = __DIR__ . '../Http/Controllers/PaymentCallbackController.php';
+        $callbackController = __DIR__ . '/../Http/Controllers/PaymentCallbackController.php';
 
         $this->publishes([
             $callbackController => app_path('Http/Controllers/PaymentCallbackController.php'),
