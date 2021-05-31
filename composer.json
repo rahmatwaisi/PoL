@@ -1,0 +1,42 @@
+{
+    "name": "rahmatwaisi/pol-gateway",
+    "description": "PoL is a laravel package to easily use polcard.ir payment services in your applications",
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mr648/PoL/issues",
+        "source": "https://github.com/mr648/PoL"
+    },
+    "authors": [
+        {
+            "name": "Rahmat Waisi",
+            "email": "rahmatwaisi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7"
+    },
+    "psr-4": {
+        "RahmatWaisi\\PoL\\": "src"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RahmatWaisi\\PoL\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RahmatWaisi\\PoL\\Providers\\PoLServiceProvider"
+            ],
+            "aliases": {
+                "POL": "RahmatWaisi\\PoL\\Facade\\PoL"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
